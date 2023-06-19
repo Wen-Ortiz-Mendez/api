@@ -1,0 +1,15 @@
+var resta=0;
+var json = [
+        {"Nombre":"Sutano","FdN":1999},
+        {"Nombre":"Fulano","FdN":1988},
+        {"Nombre":"Mengano","FdN":1980}
+       ];
+
+/*como la variable json ya esta en un formato valido, con el que tienes un arreglo 
+como json, no es necesario convertirlo, con lo cual solo lo recorres y accedes al 
+elemento que te interesa
+*/
+json.forEach(function(elemento, indice) {
+    resta -= elemento["FdN"];
+});
+console.log('La edad es: ' + resta);
